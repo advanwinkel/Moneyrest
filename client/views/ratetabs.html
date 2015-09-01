@@ -1,0 +1,15 @@
+<template name="ratetabs">
+  <select id="mcatpicker">
+    <option value=0>NHG</option>
+    <option value=1>&lt;55%</option>
+    <option value=2>&lt;65%</option>
+    <option value=3>&lt;85%</option>
+  </select>
+  <table style="width:80%">
+    {{#each rtabsOut}}
+      <tr>
+       {{> ratetab}}
+     </tr>
+    {{/each}}
+  </table>
+</template>
