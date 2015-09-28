@@ -41,3 +41,7 @@ Template.ratetabs.events({
     Session.set("mcat", newValue);
   }
 });
+
+Accounts.ui.config({
+  passwordSignupFields: "USERNAME_ONLY"
+});
